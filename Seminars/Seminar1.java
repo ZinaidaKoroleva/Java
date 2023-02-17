@@ -1,4 +1,4 @@
-package Java.Seminars;
+// package Java.Seminars;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
