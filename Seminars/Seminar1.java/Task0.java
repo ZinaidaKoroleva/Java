@@ -6,7 +6,7 @@ import java.time.format.DateTimeFormatter;
 /**
  * seminar1
  */
-public class Seminar1 {
+public class Task0 {
     public static void main(String[] args) {
         // сниппет sout:
         System.out.println("Hello, world");
