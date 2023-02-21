@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-02-21T15:58:24.749680400Z</date>
+  <millis>1676995104749</millis>
+  <nanos>680400</nanos>
+  <sequence>0</sequence>
+  <logger>Homeworks.Homework2.Task2</logger>
+  <level>INFO</level>
+  <class>Homeworks.Homework2.Task2</class>
+  <method>bubbleSort</method>
+  <thread>1</thread>
+  <message>1 &lt;-&gt; 8, [5, 6, 1, 8, 2, 0, 4]</message>
+</record>
+<record>
+  <date>2023-02-21T15:58:24.776698900Z</date>
+  <millis>1676995104776</millis>
+  <nanos>698900</nanos>
+  <sequence>1</sequence>
+  <logger>Homeworks.Homework2.Task2</logger>
+  <level>INFO</level>
+  <class>Homeworks.Homework2.Task2</class>
+  <method>bubbleSort</method>
+  <thread>1</thread>
+  <message>2 &lt;-&gt; 8, [5, 6, 1, 2, 8, 0, 4]</message>
+</record>
+<record>
+  <date>2023-02-21T15:58:24.777684800Z</date>
+  <millis>1676995104777</millis>
+  <nanos>684800</nanos>
+  <sequence>2</sequence>
+  <logger>Homeworks.Homework2.Task2</logger>
+  <level>INFO</level>
+  <class>Homeworks.Homework2.Task2</class>
+  <method>bubbleSort</method>
+  <thread>1</thread>
+  <message>0 &lt;-&gt; 8, [5, 6, 1, 2, 0, 8, 4]</message>
+</record>
+<record>
+  <date>2023-02-21T15:58:24.778683Z</date>
+  <millis>1676995104778</millis>
+  <nanos>683000</nanos>
+  <sequence>3</sequence>
+  <logger>Homeworks.Homework2.Task2</logger>
+  <level>INFO</level>
+  <class>Homeworks.Homework2.Task2</class>
+  <method>bubbleSort</method>
+  <thread>1</thread>
+  <message>4 &lt;-&gt; 8, [5, 6, 1, 2, 0, 4, 8]</message>
+</record>
+<record>
+  <date>2023-02-21T15:58:24.778683Z</date>
+  <millis>1676995104778</millis>
+  <nanos>683000</nanos>
+  <sequence>4</sequence>
+  <logger>Homeworks.Homework2.Task2</logger>
+  <level>INFO</level>
+  <class>Homeworks.Homework2.Task2</class>
+  <method>bubbleSort</method>
+  <thread>1</thread>
+  <message>1 &lt;-&gt; 6, [5, 1, 6, 2, 0, 4, 8]</message>
+</record>
+<record>
+  <date>2023-02-21T15:58:24.779683200Z</date>
+  <millis>1676995104779</millis>
+  <nanos>683200</nanos>
+  <sequence>5</sequence>
+  <logger>Homeworks.Homework2.Task2</logger>
+  <level>INFO</level>
+  <class>Homeworks.Homework2.Task2</class>
+  <method>bubbleSort</method>
+  <thread>1</thread>
+  <message>2 &lt;-&gt; 6, [5, 1, 2, 6, 0, 4, 8]</message>
+</record>
+<record>
+  <date>2023-02-21T15:58:24.779683200Z</date>
+  <millis>1676995104779</millis>
+  <nanos>683200</nanos>
+  <sequence>6</sequence>
+  <logger>Homeworks.Homework2.Task2</logger>
+  <level>INFO</level>
+  <class>Homeworks.Homework2.Task2</class>
+  <method>bubbleSort</method>
+  <thread>1</thread>
+  <message>0 &lt;-&gt; 6, [5, 1, 2, 0, 6, 4, 8]</message>
+</record>
+<record>
+  <date>2023-02-21T15:58:24.780683600Z</date>
+  <millis>1676995104780</millis>
+  <nanos>683600</nanos>
+  <sequence>7</sequence>
+  <logger>Homeworks.Homework2.Task2</logger>
+  <level>INFO</level>
+  <class>Homeworks.Homework2.Task2</class>
+  <method>bubbleSort</method>
+  <thread>1</thread>
+  <message>4 &lt;-&gt; 6, [5, 1, 2, 0, 4, 6, 8]</message>
+</record>
+<record>
+  <date>2023-02-21T15:58:24.780683600Z</date>
+  <millis>1676995104780</millis>
+  <nanos>683600</nanos>
+  <sequence>8</sequence>
+  <logger>Homeworks.Homework2.Task2</logger>
+  <level>INFO</level>
+  <class>Homeworks.Homework2.Task2</class>
+  <method>bubbleSort</method>
+  <thread>1</thread>
+  <message>1 &lt;-&gt; 5, [1, 5, 2, 0, 4, 6, 8]</message>
+</record>
+<record>
+  <date>2023-02-21T15:58:24.781682900Z</date>
+  <millis>1676995104781</millis>
+  <nanos>682900</nanos>
+  <sequence>9</sequence>
+  <logger>Homeworks.Homework2.Task2</logger>
+  <level>INFO</level>
+  <class>Homeworks.Homework2.Task2</class>
+  <method>bubbleSort</method>
+  <thread>1</thread>
+  <message>2 &lt;-&gt; 5, [1, 2, 5, 0, 4, 6, 8]</message>
+</record>
+<record>
+  <date>2023-02-21T15:58:24.781682900Z</date>
+  <millis>1676995104781</millis>
+  <nanos>682900</nanos>
+  <sequence>10</sequence>
+  <logger>Homeworks.Homework2.Task2</logger>
+  <level>INFO</level>
+  <class>Homeworks.Homework2.Task2</class>
+  <method>bubbleSort</method>
+  <thread>1</thread>
+  <message>0 &lt;-&gt; 5, [1, 2, 0, 5, 4, 6, 8]</message>
+</record>
+<record>
+  <date>2023-02-21T15:58:24.782682800Z</date>
+  <millis>1676995104782</millis>
+  <nanos>682800</nanos>
+  <sequence>11</sequence>
+  <logger>Homeworks.Homework2.Task2</logger>
+  <level>INFO</level>
+  <class>Homeworks.Homework2.Task2</class>
+  <method>bubbleSort</method>
+  <thread>1</thread>
+  <message>4 &lt;-&gt; 5, [1, 2, 0, 4, 5, 6, 8]</message>
+</record>
+<record>
+  <date>2023-02-21T15:58:24.782682800Z</date>
+  <millis>1676995104782</millis>
+  <nanos>682800</nanos>
+  <sequence>12</sequence>
+  <logger>Homeworks.Homework2.Task2</logger>
+  <level>INFO</level>
+  <class>Homeworks.Homework2.Task2</class>
+  <method>bubbleSort</method>
+  <thread>1</thread>
+  <message>0 &lt;-&gt; 2, [1, 0, 2, 4, 5, 6, 8]</message>
+</record>
+<record>
+  <date>2023-02-21T15:58:24.783683700Z</date>
+  <millis>1676995104783</millis>
+  <nanos>683700</nanos>
+  <sequence>13</sequence>
+  <logger>Homeworks.Homework2.Task2</logger>
+  <level>INFO</level>
+  <class>Homeworks.Homework2.Task2</class>
+  <method>bubbleSort</method>
+  <thread>1</thread>
+  <message>0 &lt;-&gt; 1, [0, 1, 2, 4, 5, 6, 8]</message>
+</record>
+</log>

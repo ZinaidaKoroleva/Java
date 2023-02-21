@@ -14,12 +14,12 @@ public class Task2 {
 
     public static void main(String[] args) {
         try {
-            FileHandler fh = new FileHandler("/logging.txt");
+            FileHandler fh = new FileHandler("D:\\Учеба\\Java\\Homeworks\\Homework2\\logging.txt");
             logger.addHandler(fh);
         } catch (IOException er) {
             logger.log(Level.SEVERE, "Ошибка", er);
         }
-        int[] array = { 1, 6, 2, 3, 9, 0, 4 };
+        int[] array = { 5, 6, 8, 1, 2, 0, 4 };
         System.out.println(Arrays.toString(array));
         bubbleSort(array);
     }
