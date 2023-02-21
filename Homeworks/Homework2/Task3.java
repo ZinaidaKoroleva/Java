@@ -25,19 +25,17 @@ public class Task3 {
             System.err.println("Ошибка: " + ex);
         }
         string = string.substring(1,string.length()-1); // Удаляем квадратные скобки
-        // System.out.println(string);
-        String [] peoples = string.split(", "); // Разбиваем строку на массив строк
-        System.out.println(Arrays.toString(peoples));
-        for (String people: peoples){
-            people = string.substring(1,string.length()-1);
-            String[] objects = people.split(",");
+        string = string.replace("\"","");
+        string = string.replace("{","");
+        string = string.replace("}","");
+        String [] persons = string.split(", "); // Разбиваем строку на массив строк
+        for (String person: persons){
+            String[] objects = person.split(",");
             String name = "", grade = "", subject = "";
             for (String object:objects){
                 String[] keyValue = object.split(":");
                 String key = keyValue[0];
-                key = key.substring(1,string.length()-1);
                 String value = keyValue[1];
-                value = value.substring(1,string.length()-1);
                 if (key.equals("фамилия"))
                     name = value;
                 else if (key.equals("оценка"))
