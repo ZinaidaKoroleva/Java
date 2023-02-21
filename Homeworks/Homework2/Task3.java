@@ -24,16 +24,18 @@ public class Task3 {
         catch (IOException ex){
             System.err.println("Ошибка: " + ex);
         }
-        string = string.substring(1,string.length()-1); // Удаляем квадратные скобки
+        string = string.substring(1,string.length()-1); // Удаляем квадратные скобки и остальные ненужные знаки
         string = string.replace("\"","");
         string = string.replace("{","");
         string = string.replace("}","");
         String [] persons = string.split(", "); // Разбиваем строку на массив строк
         for (String person: persons){
-            String[] objects = person.split(",");
+            String[] objects = person.split(","); // Разбиваем каждую строку в массиве на объекты
+
             String name = "", grade = "", subject = "";
+
             for (String object:objects){
-                String[] keyValue = object.split(":");
+                String[] keyValue = object.split(":"); // Создаем пары ключ-значение в объектах
                 String key = keyValue[0];
                 String value = keyValue[1];
                 if (key.equals("фамилия"))
@@ -43,7 +45,7 @@ public class Task3 {
                 else if (key.equals("предмет"))
                     subject = value;
             }
-            System.out.printf("Студент %s получил %s по предмету %s.\n", name, grade,subject);
+            System.out.printf("Студент %s получил %s по предмету %s.\n", name, grade,subject); // Форматированный вывод
 
         } 
     }
