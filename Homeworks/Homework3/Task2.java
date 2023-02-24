@@ -9,12 +9,12 @@ public class Task2 {
         ArrayList<Integer> numbersList = new ArrayList<>();
         Random rd = new Random();
         for (int i = 0; i < 15; i++) {
-            numbersList.add(rd.nextInt(0,10));
+            numbersList.add(rd.nextInt(0,10)); // Заполняем список рандомными числами
         }
         System.out.printf("Исходный список: %s\n", numbersList);
         System.out.printf("Новый список: %s", sortedList(numbersList));
     }
-    private static ArrayList sortedList(ArrayList<Integer> numbersList) {
+    private static ArrayList sortedList(ArrayList<Integer> numbersList) {   // Функция, удаляющая четные цифры
         for (int i = 0; i < numbersList.size(); i++) {
             if (numbersList.get(i) % 2 == 0){
                 numbersList.remove(i);
