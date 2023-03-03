@@ -13,33 +13,34 @@ import java.util.Map;
 public class Task2 {
     public static void main(String[] args) {
         File file = new File("D:\\Учеба\\Java\\Homeworks\\Homework5\\names.txt"); // открываем файл
-        String peoples = null;
+        String peoples = new String();
+
         try (BufferedReader br = new BufferedReader(new FileReader(file))){
             peoples = br.readLine(); // формируем строку из файла
         }
         catch (IOException ex){
             System.err.println("Ошибка: " + ex);
         }
-        // countRepeats(peoples);
-        System.out.println(countRepeats(peoples));
+
+        countRepeats(peoples);
     }
-    private static Map<String, Integer> countRepeats(String string){
-        string = string.replace(",","");
-        String [] names = string.split(", ");
+    private static void countRepeats(String string){
+
+        String [] names = string.split(", "); // Делаем из строки массив
 
         HashMap<String, Integer> namesCount = new HashMap<>();
-        int count = 1;
-        for (String name: names) {
-            if (namesCount.containsKey(name)){
-                int countN = namesCount.get(name);
-                countN +=1;
-                System.out.println(countN);
-                namesCount.put(name, countN);
-            }
-            else namesCount.put(name, count);
 
+        for (int i = 0; i < names.length; i++) {
+            if (namesCount.containsKey(names[i])){ // Если словарь содержит имя,то перезаписываем и прибавляем + 1 к значению
+                        int countN = namesCount.get(names[i]);
+                        countN +=1;
+                        namesCount.put(names[i], countN);
+                    }
+            else namesCount.put(names[i], 1); // Записываем значение, если его еще не было
         }
-        
-        return namesCount;
+
+        namesCount.entrySet().stream() // сортировка
+        .sorted(Map.Entry.<String, Integer>comparingByValue().reversed()) 
+        .forEach(System.out::println); 
     }
 }
