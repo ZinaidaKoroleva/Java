@@ -32,16 +32,59 @@ public class Cat {
     }
 
     @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((name == null) ? 0 : name.hashCode());
+        result = prime * result + ((owner == null) ? 0 : owner.hashCode());
+        result = prime * result + ((breed == null) ? 0 : breed.hashCode());
+        result = prime * result + ((dateBorn == null) ? 0 : dateBorn.hashCode());
+        result = prime * result + ((color == null) ? 0 : color.hashCode());
+        result = prime * result + ((vaccinations == null) ? 0 : vaccinations.hashCode());
+        return result;
+    }
+
+
+    @Override
     public boolean equals(Object obj) {
-        if (obj == this)
-        return true;
+        if (this == obj)
+            return true;
         if (obj == null)
-        return false;
-        if (!(obj instanceof Cat))
-        return false;
-        Cat other = (Cat)obj;
-        return 
-            this.name.equals(other.name)&& this.owner.equals(other.owner)&& this.breed.equals(other.breed);
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Cat other = (Cat) obj;
+        if (name == null) {
+            if (other.name != null)
+                return false;
+        } else if (!name.equals(other.name))
+            return false;
+        if (owner == null) {
+            if (other.owner != null)
+                return false;
+        } else if (!owner.equals(other.owner))
+            return false;
+        if (breed == null) {
+            if (other.breed != null)
+                return false;
+        } else if (!breed.equals(other.breed))
+            return false;
+        if (dateBorn == null) {
+            if (other.dateBorn != null)
+                return false;
+        } else if (!dateBorn.equals(other.dateBorn))
+            return false;
+        if (color == null) {
+            if (other.color != null)
+                return false;
+        } else if (!color.equals(other.color))
+            return false;
+        if (vaccinations == null) {
+            if (other.vaccinations != null)
+                return false;
+        } else if (!vaccinations.equals(other.vaccinations))
+            return false;
+        return true;
     }
 
 
